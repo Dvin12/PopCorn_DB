@@ -4,12 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>PopcornDB</title>
   </head>
   <body>
-    POPCORNDB
+    <header class="header">
+      <nav class="header__navigation">
+        <h1 class="header__navigation__name">PopcornDB</h1>
+        <form action="search" class="form">
+          <input type="text" placeholder="Example: Terminator" class="search" />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
 
+        <ul class="header__navigation__list">
+          <li class="header__navigation__list__item">Watchlist</li>
+          <li class="header__navigation__list__item">
+            <i class="fa-solid fa-user"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="slideshow">SLIDESHOW</section>
+
+    <section class="main">
+      <article class="movie-card">
+        <img
+          src="https://static.tvtropes.org/pmwiki/pub/images/dalida_robot.jpg"
+          alt="Movie Poster"
+        />
+
+        <div class="movie-card__info">
+          <h3>TITLE</h3>
+          <span class="rating">7.8</span>
+        </div>
+
+        <div class="movie-card__overview">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ab?
+            Cupiditate eveniet nostrum fugit natus temporibus numquam recusandae
+            quisquam labore excepturi, voluptas quo? Recusandae temporibus
+            doloremque iure ullam, aliquam dicta amet inventore earum placeat
+            et, voluptate deserunt expedita provident rem.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; Edvin Venclavovic</p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/1529534295.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>
