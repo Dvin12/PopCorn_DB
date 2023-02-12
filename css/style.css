@@ -7,4 +7,76 @@
 html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
+}
+
+.header {
+  background-color: orangered;
+  padding: 1.2rem 3rem;
+}
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__navigation__name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.header__navigation__name span {
+  padding: 0.3rem;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+.header .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+.header .form input {
+  display: inline-block;
+  width: 50%;
+  padding: 0 1.8rem;
+  height: 3.4rem;
+  border: 2px solid;
+  border-radius: 12px;
+  outline: none;
+  font-family: inherit;
+  background-color: rgba(51, 51, 51, 0.575);
+  color: #fff;
+}
+.header .form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  background-color: #333;
+  cursor: pointer;
+}
+.header .form button i {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.header .header__navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  list-style: none;
+}
+.header .header__navigation__list__item {
+  font-size: 2.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.header .header__navigation__list__item i {
+  padding: 1.4rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 100%;
 }/*# sourceMappingURL=style.css.map */
