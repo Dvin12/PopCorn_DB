@@ -140,4 +140,10 @@ html {
 
 .movie-card:hover .movie-card__overview {
   transform: translateY(0);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
 }/*# sourceMappingURL=style.css.map */
