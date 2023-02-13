@@ -14,7 +14,7 @@ html {
 }
 
 .header {
-  background-color: rgba(32, 58, 67, 0.3960784314);
+  background-color: rgba(33, 37, 41, 0.5764705882);
   padding: 1rem 8rem;
 }
 .header__navigation {
@@ -46,7 +46,7 @@ html {
   border-radius: 14px;
   font-family: "Roboto";
   background-color: rgba(51, 51, 51, 0.219);
-  color: #fff;
+  color: #dee2e6;
 }
 .header .form button {
   display: flex;
