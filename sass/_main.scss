@@ -1,0 +1,67 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3.4rem;
+}
+
+.movie-card {
+  width: 30rem;
+  margin: 3.8rem;
+  border-radius: 8px;
+  background-color: #666;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  &__info {
+    margin: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    color: #fff;
+  }
+
+  span {
+    padding: 0.8rem;
+    background-color: #333;
+    border-radius: 4px;
+
+    span.green {
+      color: lightgreen;
+    }
+
+    span.orange {
+      color: orange;
+    }
+
+    span.red {
+      color: red;
+    }
+  }
+
+  &__overview {
+    position: absolute;
+    padding: 1.2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    font-size: 1.6rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+  }
+}
+
+.movie-card:hover .movie-card__overview {
+  transform: translateY(0);
+}
