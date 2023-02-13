@@ -4,9 +4,11 @@
   box-sizing: border-box;
 }
 
-
+body {
+  background-image: linear-gradient(45deg, #3a6186, #89253e);
+}
 
 html {
   font-size: 62.5%;
-  font-family: 'Lato', sans-serif;
+  font-family: "Roboto", sans-serif;
 }

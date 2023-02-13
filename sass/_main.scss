@@ -10,7 +10,7 @@
   width: 30rem;
   margin: 3.8rem;
   border-radius: 8px;
-  background-color: #666;
+  background-color: #343a40;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   position: relative;
@@ -27,12 +27,12 @@
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 1.3px;
-    color: #fff;
+    color: #dee2e6;
   }
 
   span {
     padding: 0.8rem;
-    background-color: #333;
+    background-color: #495057;
     border-radius: 4px;
 
     span.green {
@@ -50,15 +50,21 @@
 
   &__overview {
     position: absolute;
-    padding: 1.2rem;
+    padding: 1.4rem;
+    text-align: justify;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: #e9ecef;
+    color: #212529;
     font-size: 1.6rem;
     max-height: 100%;
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
+
+    h3 {
+      margin: 1.4rem 0;
+    }
   }
 }
 
