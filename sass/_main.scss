@@ -34,18 +34,18 @@
     padding: 0.8rem;
     background-color: #495057;
     border-radius: 4px;
+  }
 
-    span.green {
-      color: lightgreen;
-    }
+  .green {
+    color: rgb(6, 194, 6);
+  }
 
-    span.orange {
-      color: orange;
-    }
+  .orange {
+    color: orange;
+  }
 
-    span.red {
-      color: red;
-    }
+  .red {
+    color: red;
   }
 
   &__overview {

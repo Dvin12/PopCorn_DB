@@ -6,6 +6,7 @@
 
 body {
   background-image: linear-gradient(45deg, #3a6186, #89253e);
+  background-attachment: fixed;
 }
 
 html {
@@ -13,8 +14,18 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 40em) {
+  html {
+    font-size: 45%;
+  }
+}
 .header {
-  background-color: rgba(33, 37, 41, 0.5764705882);
+  background-color: rgba(33, 37, 41, 0.8470588235);
   padding: 1rem 8rem;
 }
 .header__navigation {
@@ -23,10 +34,17 @@ html {
   align-items: center;
 }
 .header__navigation__logo {
-  width: 3.5%;
+  width: 6rem;
   padding: 0.3rem;
   filter: invert(100%);
   cursor: pointer;
+}
+.header__navigation span {
+  margin-top: 1.4rem;
+  margin-left: 0.2rem;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #ff922b;
 }
 .header .form {
   display: flex;
@@ -52,10 +70,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  background: transparent;
   padding: 0.9rem;
-  border-radius: 100%;
-  border: 2px solid #dee2e6;
-  background-color: #343a40;
   cursor: pointer;
 }
 .header .form button i {
@@ -76,12 +93,32 @@ html {
   cursor: not-allowed;
 }
 .header .header__navigation__list__item i {
-  padding: 1.8rem;
+  padding: 1.2rem;
   background-color: #495057;
   color: #dee2e6;
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 75em) {
+  .header .form input {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 43.75em) {
+  .header {
+    padding: 1rem 1rem;
+  }
+  .header__navigation__logo {
+    width: 4rem;
+  }
+  .header__navigation span {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .header__navigation__list__item {
+    font-size: 1.8rem !important;
+  }
+}
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -117,13 +154,13 @@ html {
   background-color: #495057;
   border-radius: 4px;
 }
-.movie-card span span.green {
-  color: lightgreen;
+.movie-card .green {
+  color: rgb(6, 194, 6);
 }
-.movie-card span span.orange {
+.movie-card .orange {
   color: orange;
 }
-.movie-card span span.red {
+.movie-card .red {
   color: red;
 }
 .movie-card__overview {

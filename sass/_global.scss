@@ -6,9 +6,22 @@
 
 body {
   background-image: linear-gradient(45deg, #3a6186, #89253e);
+  background-attachment: fixed;
 }
 
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  html {
+    font-size: 45%;
+  }
 }
