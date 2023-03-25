@@ -7,19 +7,23 @@
     justify-content: space-between;
     align-items: center;
 
-    &__logo {
-      width: 6rem;
-      padding: 0.3rem;
-      filter: invert(100%);
-      cursor: pointer;
-    }
-
-    span {
-      margin-top: 1.4rem;
-      margin-left: 0.2rem;
+    .navigation__logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 2.8rem;
       font-weight: 600;
-      color: #ff922b;
+
+      p {
+        font-weight: 500;
+        color: #f1f3f5;
+        letter-spacing: 1.1px;
+      }
+
+      span {
+        margin-left: 0.1rem;
+        color: #69db7c;
+      }
     }
   }
 
@@ -27,8 +31,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translate(-5%);
     width: 100%;
     gap: 1rem;
+    position: relative;
 
     input {
       display: inline-block;
@@ -50,6 +56,8 @@
       border: none;
       background: transparent;
       padding: 0.9rem;
+      position: absolute;
+      right: 25.5%;
       cursor: pointer;
 
       i {
@@ -85,8 +93,24 @@
 @media only screen and (max-width: 75em) {
   .header {
     .form {
+      button {
+        right: 25.5%;
+        i {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .header {
+    .form {
       input {
         width: 70%;
+      }
+      button {
+        right: 16%;
       }
     }
   }
@@ -97,12 +121,8 @@
     padding: 1rem 1rem;
 
     &__navigation {
-      &__logo {
-        width: 4rem;
-      }
       span {
-        font-size: 2rem;
-        margin-top: 1rem;
+        font-size: 2.8rem;
       }
     }
   }
